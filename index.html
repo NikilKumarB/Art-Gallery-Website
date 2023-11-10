@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    height: 30px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hero section styles */
+  .hero {
+    background-image: url("hero_image.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+  }
+  
+  /* Featured artists section styles */
+  .featured-artists {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .featured-artists h2 {
+    margin: 0;
+  }
+  
+  .artist-grid {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .artist-card {
+    margin: 0 15px;
+    text-align: center;
+  }
+  
+  .artist-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .artist-card h3 {
+    margin-top: 10px;
+  }
+  
+  /* Exhibitions section styles */
+  .exhibitions {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f7f7f7;
+  }
+  
+  .exhibitions h2 {
+    margin: 0;
+  }
+  
+  .exhibition-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .exhibition-card {
+    margin: 0 15px;
+    text-align: center;
+  }
+  
+  .exhibition-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .exhibition-card h3 {
+    margin-top: 10px;
+  }
+  
+  /* Newsletter section styles */
+  .newsletter {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .newsletter h2 {
+    margin: 0;
+  }
+  
+  .newsletter p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .newsletter form {
+    margin-top: 20px;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    width: 250px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="C:\Users\NIKIL KUMAR\Desktop\Project\art photos\LOGO.png" alt="Art Vista">
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Artists</a></li>
+        <li><a href="#">Exhibitions</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="logo">
+        <P>ArtVista</P>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to the Art Gallery</h1>
+        <p>Discover stunning artworks from renowned artists.</p>
+        <a href="#" class="cta-button">Explore Now</a>
+      </div>
+    </section>
+    
+    <section class="featured-artists">
+      <h2>Featured Artists</h2>
+      <div class="artist-grid">
+        <!-- Display featured artists with their artworks -->
+        <div class="artist-card">
+          <img src="artist1.jpg" alt="Artist 1">
+          <h3>Artist 1</h3>
+        </div>
+        <div class="artist-card">
+          <img src="artist2.jpg" alt="Artist 2">
+          <h3>Artist 2</h3>
+        </div>
+        <div class="artist-card">
+          <img src="artist3.jpg" alt="Artist 3">
+          <h3>Artist 3</h3>
+        </div>
+      </div>
+    </section>
+    
+    <section class="exhibitions">
+      <h2>Current Exhibitions</h2>
+      <div class="exhibition-list">
+        <!-- Display current exhibitions with details -->
+        <div class="exhibition-card">
+          <img src="exhibition1.jpg" alt="Exhibition 1">
+          <h3>Exhibition 1</h3>
+          <p>Date: July 15 - August 15</p>
+          <a href="#" class="cta-button">Learn More</a>
+        </div>
+        <div class="exhibition-card">
+          <img src="exhibition2.jpg" alt="Exhibition 2">
+          <h3>Exhibition 2</h3>
+          <p>Date: August 1 - September 1</p>
+          <a href="#" class="cta-button">Learn More</a>
+        </div>
+      </div>
+    </section>
+    
+    <section class="newsletter">
+      <h2>Subscribe to Our Newsletter</h2>
+      <p>Stay up-to-date with the latest news and events.</p>
+      <form>
+        <input type="email" placeholder="Enter your email address">
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+  <script>
+    $(document).ready(function() {
+    // Slideshow for Featured Artists
+    var currentIndex = 0;
+    var artists = $('.artist-card');
+  
+    function showArtist(index) {
+      artists.hide();
+      artists.eq(index).show();
+    }
+  
+    function cycleArtists() {
+      currentIndex++;
+      if (currentIndex >= artists.length) {
+        currentIndex = 0;
+      }
+      showArtist(currentIndex);
+    }
+  
+    setInterval(cycleArtists, 3000); // Change artist every 3 seconds
+  
+    // Filterable Artwork Gallery
+    $('.filter-button').on('click', function() {
+      var category = $(this).data('category');
+      $('.artwork').hide();
+      $('.artwork[data-category="' + category + '"]').show();
+    });
+  
+    // Interactive Exhibition Details
+    $('.exhibition-card').on('click', function() {
+      $(this).toggleClass('active');
+    });
+  
+    // Lightbox for Artwork Images
+    $('.artwork img').on('click', function() {
+      var imageUrl = $(this).attr('src');
+      var modalHtml = '<div class="lightbox-modal">' +
+                      '<img src="' + imageUrl + '">' +
+                      '</div>';
+      $('body').append(modalHtml);
+    });
+  
+    $('body').on('click', '.lightbox-modal', function() {
+      $(this).remove();
+    });
+  
+    // Newsletter Subscription Confirmation
+    $('form').on('submit', function(event) {
+      event.preventDefault();
+      // Process form submission and display confirmation message
+      $('.newsletter-confirmation').show().delay(3000).fadeOut();
+    });
+  
+    // Smooth Scrolling
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $(this.getAttribute('href'));
+      if (target.length) {
+        event.preventDefault();
+        $('html, body').stop().animate({
+          scrollTop: target.offset().top
+        }, 1000);
+      }
+    });
+  });
+  </script>
+  <footer>
+    <p>&copy; 2023 Art Gallery. All rights reserved.</p>
+  </footer>
+</body>
+</html>
